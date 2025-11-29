@@ -65,3 +65,12 @@ mensagem
  Volume persiste
 (1 row)
 ```
+
+### PRINTS
+
+
+## 1. Comando para visualização da coluna segredo no banco
+![WhatsApp Image 2025-11-29 at 16 12 20](https://github.com/user-attachments/assets/9c24355e-cf1d-418e-8c18-d7589b0d207b)
+
+## 2. Comando de remoção e stop do container + comando de criação do container + comando de visualização da coluna segredo no banco
+![WhatsApp Image 2025-11-29 at 16 13 20](https://github.com/user-attachments/assets/7f1430cd-b53c-4301-891c-d6e1f9565719)
