@@ -58,3 +58,5 @@ docker-compose down
 - Ao acessar a aplicação, o retorno visual confirma a integração: "Esta página foi vista X vezes."
 
 - Isso demonstra que o container web conseguiu resolver o nome DNS cache automaticamente e trocar dados com ele.
+  
+![WhatsApp Image 2025-11-30 at 10 21 07](https://github.com/user-attachments/assets/59aae0a4-7714-433d-b9da-c86150e50c05)
