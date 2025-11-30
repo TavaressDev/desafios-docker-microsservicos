@@ -19,7 +19,7 @@ O sistema é dividido em dois serviços isolados:
 
 ### 1. Networking e DNS
 
-Para que os containers conversassem entre si sem o uso de IPs fixos, utilizamos a rede padrão criada pelo Docker Compose.
+Para que os containers conversassem entre si sem o uso de IPs fixos, utilizei a rede padrão criada pelo Docker Compose.
 
 - O **Client** acessa a **API** utilizando o nome do serviço definido no `docker-compose.yml` como hostname: `http://api:8000`.
 
@@ -28,12 +28,10 @@ Para que os containers conversassem entre si sem o uso de IPs fixos, utilizamos 
 Ao iniciar os serviços simultaneamente, o Client tentava acessar a API antes dela estar pronta, gerando o erro `ENOTFOUND`.
 
 Para resolver isso, utilizamos a configuração:
-
-> \*\* depends_on:
-
+```
+ depends_on:
       - api
-
-\*\*
+```
 
 Isso instrui o Docker a iniciar o container do cliente apenas após o container da API ter sido iniciado.
 
@@ -54,3 +52,5 @@ http://localhost:8000/users
 ## Resultados esperados
 
 - Ao acessar http://localhost:8000/users você verá o json que o endpoint devolve como resposta
+  ![WhatsApp Image 2025-11-30 at 15 12 18](https://github.com/user-attachments/assets/5353d539-fb03-4ba2-b0ea-06e620f55f52)
+
