@@ -1,0 +1,13 @@
+services:
+  gateway:
+    build: gateway
+    ports:
+      - 8000:8000
+    depends_on:
+      - users
+      - orders
+  users:
+    build: users-service
+
+  orders:
+    build: orders-service
