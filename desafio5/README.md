@@ -38,3 +38,13 @@ Por isso, ajustamos os microsserviços para escutarem na rota raiz (`/`).
 - Status do Gateway: http://localhost:8000/
 - Usuários: http://localhost:8000/users
 - Pedidos: http://localhost:8000/orders
+
+### Resultados esperados
+
+
+- Gateway:
+  ![WhatsApp Image 2025-11-30 at 16 14 28](https://github.com/user-attachments/assets/57ff462f-5a36-4e8b-8f4d-7fcfe0f421d1)
+- Usuários:
+  ![WhatsApp Image 2025-11-30 at 16 15 08](https://github.com/user-attachments/assets/33fb5d12-0580-45c3-8428-0d9f1e69e709)
+- Pedidos:
+  ![WhatsApp Image 2025-11-30 at 16 14 53](https://github.com/user-attachments/assets/3990bbdf-6606-4bcc-9657-3eb72725827c)
