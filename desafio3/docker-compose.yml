@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  # Serviço 1: Aplicação Node
+  web:
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - cache
+      - db
+    environment:
+      - REDIS_HOST=cache
+
+  # Serviço 2: Cache (Redis)
+  cache:
+    image: redis:alpine
+    networks:
+      default:
+
+  # Serviço 3: Banco de Dados (Postgres)
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_PASSWORD: admin
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+# Definição do volume (para o banco não perder dados)
+volumes:
+  pgdata:
